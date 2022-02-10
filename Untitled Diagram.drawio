@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-08T15:17:54.429Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="x6kv-1nTeq6-d3fLcZV-" compressed="false" version="16.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-10T04:43:38.565Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="kFTklnVzqM49yhnmvuX9" compressed="false" version="16.5.3" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
-    <mxGraphModel dx="942" dy="719" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1108" dy="846" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -256,6 +256,48 @@
         </mxCell>
         <mxCell id="MIoPtLZZgSSOrN5l6zsZ-31" value="zhuge" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="131" y="1295" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="g_M7y7TpewpBBdJOgPck-2" value="&lt;font style=&quot;font-size: 14px&quot;&gt;运行时数据区（内存模型）&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=top;fontStyle=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="880" y="100" width="980" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="g_M7y7TpewpBBdJOgPck-3" value="堆" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="160" width="240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="g_M7y7TpewpBBdJOgPck-4" value="方法区&lt;br&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Lucida Console;horizontal=1;" vertex="1" parent="1">
+          <mxGeometry x="916" y="160" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="g_M7y7TpewpBBdJOgPck-5" value="栈（线程）" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#e1d5e7;strokeColor=#9673a6;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="160" width="300" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="g_M7y7TpewpBBdJOgPck-10" value="运行时常量池" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="936" y="185" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="g_M7y7TpewpBBdJOgPck-11" value="类型信息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="1026" y="185" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="g_M7y7TpewpBBdJOgPck-13" value="字段信息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="1116" y="185" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="g_M7y7TpewpBBdJOgPck-14" value="方法信息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="936" y="235" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="g_M7y7TpewpBBdJOgPck-15" value="类加载器&lt;br&gt;的引用" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="1026" y="235" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="g_M7y7TpewpBBdJOgPck-19" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;curved=1;" edge="1" parent="1" source="g_M7y7TpewpBBdJOgPck-16" target="g_M7y7TpewpBBdJOgPck-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_M7y7TpewpBBdJOgPck-16" value="class实例&lt;br&gt;的引用" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="1116" y="235" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="g_M7y7TpewpBBdJOgPck-17" value="class实例" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="190" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="g_M7y7TpewpBBdJOgPck-21" value="本地方法栈" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#e1d5e7;strokeColor=#9673a6;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="290" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="g_M7y7TpewpBBdJOgPck-22" value="程序计数器" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#e1d5e7;strokeColor=#9673a6;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="390" width="300" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

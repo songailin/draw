@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-17T03:20:08.472Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36" etag="g8S1MdFQjRGIT19Rf5RN" version="16.5.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-17T03:28:39.946Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36" etag="HF2fswbRf6iLgmd7Oxrb" version="16.5.6" type="github">
   <diagram id="h0-ubqh-4Q6Teegiy32y" name="第 1 页">
     <mxGraphModel dx="942" dy="719" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -8,22 +8,31 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Ia8lxOgM1TmryvwdhqaB-1" value="登陆&lt;br style=&quot;font-size: 14px;&quot;&gt;/auth/login" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="120" y="200" width="120" height="60" as="geometry" />
+          <mxGeometry x="40" y="200" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Ia8lxOgM1TmryvwdhqaB-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="Ia8lxOgM1TmryvwdhqaB-2" target="Ia8lxOgM1TmryvwdhqaB-4">
+        <mxCell id="Ia8lxOgM1TmryvwdhqaB-12" value="ruoyi-gateway" style="swimlane;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="180" y="80" width="650" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8lxOgM1TmryvwdhqaB-2" value="CacheRequestFilter&lt;br&gt;缓存请求body" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="Ia8lxOgM1TmryvwdhqaB-12">
+          <mxGeometry x="30" y="120" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8lxOgM1TmryvwdhqaB-4" value="ValidateCodeFilter&lt;br&gt;校验验证码" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="Ia8lxOgM1TmryvwdhqaB-12">
+          <mxGeometry x="240" y="120" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8lxOgM1TmryvwdhqaB-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="Ia8lxOgM1TmryvwdhqaB-12" source="Ia8lxOgM1TmryvwdhqaB-2" target="Ia8lxOgM1TmryvwdhqaB-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ia8lxOgM1TmryvwdhqaB-2" value="CacheRequestFilter&lt;br&gt;缓存请求body" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="320" y="200" width="160" height="60" as="geometry" />
+        <mxCell id="Ia8lxOgM1TmryvwdhqaB-7" value="" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" vertex="1" parent="Ia8lxOgM1TmryvwdhqaB-12">
+          <mxGeometry x="295" y="30" width="50" height="42" as="geometry" />
         </mxCell>
-        <mxCell id="Ia8lxOgM1TmryvwdhqaB-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1.032;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;" edge="1" parent="1" source="Ia8lxOgM1TmryvwdhqaB-4" target="Ia8lxOgM1TmryvwdhqaB-7">
+        <mxCell id="Ia8lxOgM1TmryvwdhqaB-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1.032;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;startArrow=classic;startFill=1;" edge="1" parent="Ia8lxOgM1TmryvwdhqaB-12" source="Ia8lxOgM1TmryvwdhqaB-4" target="Ia8lxOgM1TmryvwdhqaB-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ia8lxOgM1TmryvwdhqaB-4" value="ValidateCodeFilter&lt;br&gt;校验验证码" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="560" y="200" width="160" height="60" as="geometry" />
+        <mxCell id="Ia8lxOgM1TmryvwdhqaB-9" value="StripPrefixFilter&lt;br&gt;/login" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="Ia8lxOgM1TmryvwdhqaB-12">
+          <mxGeometry x="460" y="120" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Ia8lxOgM1TmryvwdhqaB-7" value="" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" vertex="1" parent="1">
-          <mxGeometry x="615" y="80" width="50" height="42" as="geometry" />
+        <mxCell id="Ia8lxOgM1TmryvwdhqaB-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;startArrow=none;startFill=0;" edge="1" parent="Ia8lxOgM1TmryvwdhqaB-12" source="Ia8lxOgM1TmryvwdhqaB-4" target="Ia8lxOgM1TmryvwdhqaB-9">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
